@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Lucknow PrintHub - Premium Printing Solutions</title>
     
     <!-- Tailwind CSS -->
@@ -25,9 +25,15 @@
             --ink-yellow: #eab308;
         }
 
+        /* STRICT OVERFLOW HANDLING FOR MOBILE */
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            position: relative;
+        }
+
         body {
             font-family: 'Outfit', sans-serif;
-            overflow-x: hidden;
             -webkit-tap-highlight-color: transparent;
         }
 
@@ -125,7 +131,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 overflow-x-hidden">
 
     <!-- Loader -->
     <div id="loader">
